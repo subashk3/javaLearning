@@ -12,6 +12,7 @@ public class AbstractClass extends AbsClassSuper {
 		AbsClassSuper obj = new AbstractClass();
 		obj.absMethodOne();
 		obj.absMethodTwo();
+	
 
 	}
 

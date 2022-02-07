@@ -7,6 +7,8 @@ public class WithoutString {
 		float numBer = 7.50f;
 
 		System.out.printf("%.2f", numBer);
+		
+	
 
 	}
 

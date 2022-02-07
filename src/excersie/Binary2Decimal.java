@@ -20,7 +20,7 @@ public class Binary2Decimal {
 			temp = a % 10;
 			a = a / 10;
 
-		//	System.out.println(temp + " " + i);
+			// System.out.println(temp + " " + i);
 			res = res + (int) ((temp * Math.pow(2, i)));
 		}
 		System.out.println(res);
@@ -32,8 +32,9 @@ public class Binary2Decimal {
 		System.out.println("Enter the Binary Number (0 and 1):");
 
 		int getNumb = sc.nextInt();
-		
+
 		binary2Decimal(getNumb);
+
 	}
 
 }
