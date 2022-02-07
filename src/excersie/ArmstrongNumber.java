@@ -10,7 +10,6 @@ public class ArmstrongNumber {
 		System.out.println("Enter the Number: ");
 		int getNum = sc.nextInt();
 		checkArmstrong(getNum);
-
 	}
 
 	static int countNum(int a) {
@@ -20,7 +19,6 @@ public class ArmstrongNumber {
 			a = a / 10;
 
 		} while (a != 0);
-
 		return count;
 	}
 
@@ -29,7 +27,6 @@ public class ArmstrongNumber {
 		int x, res = 0;
 		int temp = a;
 		int count = countNum(temp);
-		System.out.println(count);
 
 		while (a != 0) {
 

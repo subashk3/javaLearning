@@ -26,7 +26,6 @@ public class Test {
 		obj.subash(s, b);  // obj.subash(10,20);
 		
 		
-		
 	}
 
 }
