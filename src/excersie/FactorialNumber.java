@@ -8,8 +8,8 @@ public class FactorialNumber {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the Number:");
-		int f = sc.nextInt();
-		System.out.println("Factroial of give number is: "+ factorialNum(f));
+		int getNum = sc.nextInt();
+		System.out.println("Factroial of give number is: "+ factorialNum(getNum));
 
 	}
 

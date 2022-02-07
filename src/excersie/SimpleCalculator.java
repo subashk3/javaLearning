@@ -1,8 +1,9 @@
-package testprograms;
+//Program to Make a Simple Calculator Using switch
+package excersie;
 
 import java.util.Scanner;
 
-public class Calculator {
+public class SimpleCalculator {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -21,11 +22,10 @@ public class Calculator {
 		System.out.println("Enter the operator (+ - * / )");
 
 		o = sc.next().charAt(0);
-		
-		
-		int res = calculator(f,s,o);
-		
-		System.out.println("Result is: "+ res);
+
+		int res = calculator(f, s, o);
+
+		System.out.println("Result is: " + res);
 
 	}
 
@@ -35,20 +35,19 @@ public class Calculator {
 
 		case '+':
 			return a + b;
-			
+
 		case '-':
 			return a - b;
-			
+
 		case '*':
 			return a * b;
-			
+
 		case '/':
 			return a / b;
-			
+
 		default:
-		System.out.println("Enter Wrong Operator check again:");		
-			
-			
+			System.out.println("Enter Wrong Operator check again:");
+			break;
 
 		}
 		return 0;
