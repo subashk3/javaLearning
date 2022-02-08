@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class PassingMatrix {
 	// Matrix Muplitply
-	static void matrixMuplitply(int[][] firstMatrix, int[][] secondMatrix, int fmRow, int fmCol, int smRow, int smCol) {
+	void matrixMuplitply(int[][] firstMatrix, int[][] secondMatrix, int fmRow, int fmCol, int smRow, int smCol) {
 		Scanner in = new Scanner(System.in);
 		// Result Matrix initialize
 		int[][] resulMatrix = new int[fmRow][smCol];
@@ -40,7 +40,7 @@ public class PassingMatrix {
 			}
 			System.out.println();
 		}
-		in.close();
+		// in.close();
 	}
 
 	public static void main(String[] args) {
@@ -56,15 +56,12 @@ public class PassingMatrix {
 		srow = sc.nextInt();
 		System.out.println("Enter the Number of 2 st matrix  col:");
 		scol = sc.nextInt();
-		sc.close();
-
-		// ResulMatrix = new int[frow][scol];
-		// PassingMatrix obj = new PassingMatrix();
+		PassingMatrix obj = new PassingMatrix();
 
 		if (fcol == srow) {
 			firstMatrix = new int[frow][fcol];
 			secondMatrix = new int[srow][scol];
-			matrixMuplitply(firstMatrix, secondMatrix, frow, fcol, srow, scol);
+			obj.matrixMuplitply(firstMatrix, secondMatrix, frow, fcol, srow, scol);
 		} else
 			System.out.println("This matrix unable to Multiply");
 	}
