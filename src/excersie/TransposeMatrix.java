@@ -27,14 +27,14 @@ public class TransposeMatrix {
 		}
 
 		System.out.println();
-		for (int i = 0; i < row; i++) {
-			for (int j = 0; j < col; j++) {
+		for (int i = 0; i < trow; i++) {
+			for (int j = 0; j < tcol; j++) {
 				TransposeMatrix[i][j] = firstMatrix[j][i];
 			}
 		}
 		System.out.println("Transpose is :");
-		for (int i = 0; i < row; i++) {
-			for (int j = 0; j < col; j++) {
+		for (int i = 0; i < trow; i++) {
+			for (int j = 0; j < tcol; j++) {
 				System.out.print(TransposeMatrix[i][j] + " ");
 			}
 			System.out.println();
