@@ -1,3 +1,4 @@
+//32.Program to Check Whether a Number is Even or Odd
 package excersie;
 
 import java.util.Scanner;

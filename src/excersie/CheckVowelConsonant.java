@@ -1,3 +1,5 @@
+//33.Program to Check Whether a Character is a Vowel or Consonant
+
 package excersie;
 
 import java.util.Scanner;

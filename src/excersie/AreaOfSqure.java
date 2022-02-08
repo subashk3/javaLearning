@@ -1,3 +1,4 @@
+//12) Write a program to find the area of the square
 package excersie;
 
 import java.util.Scanner;

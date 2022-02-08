@@ -18,13 +18,14 @@ public class AddTwoMatrices {
 		firstMatrix = new int[row][col];
 		secondMatrix = new int[row][col];
 		resulMatrix = new int[row][col];
-
+		// Getting matrix loop
 		System.out.println("Enter firstMatrix");
 		for (int i = 0; i < row; i++) {
 			for (int j = 0; j < col; j++) {
 				firstMatrix[i][j] = sc.nextInt();
 			}
 		}
+		// Getting matrix loop
 		System.out.println("Enter Second tMatrix");
 		for (int i = 0; i < row; i++) {
 			for (int j = 0; j < col; j++) {
@@ -39,15 +40,14 @@ public class AddTwoMatrices {
 				resulMatrix[i][j] = firstMatrix[i][j] + secondMatrix[i][j];
 
 			}
-			}
-		System.out.println("Resu is :");
+		}
+		System.out.println("Result is :");
 		for (int i = 0; i < row; i++) {
 			for (int j = 0; j < col; j++) {
 				System.out.print(resulMatrix[i][j] + " ");
 			}
 			System.out.println();
 		}
-		
 
 	}
 
