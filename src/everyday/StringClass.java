@@ -8,9 +8,11 @@ public class StringClass {
 
 	public static void main(String[] args) {
 		// Object declaration in heap memory
+		
 		String s1 = new String("Hello this first Program from String");
 
 		// literal declaration in String Constant Pool memory
+		
 		String s2 = " don't judge a book by its cover ";
 
 		/* String methods; */
