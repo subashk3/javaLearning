@@ -7,6 +7,7 @@ package everyday;
 public class StringClass {
 
 	public static void main(String[] args) {
+		
 		// Object declaration in heap memory
 		
 		String s1 = new String("Hello this first Program from String");
@@ -60,6 +61,8 @@ public class StringClass {
 //		System.out.println(s2.toLowerCase()+ " " +s2.toUpperCase());
 		
 		
+		
+	
 		
 
 	}
