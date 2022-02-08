@@ -9,13 +9,10 @@ public class PrimeOrNot {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the number:");
 		int getNum = sc.nextInt();
-
 		checkPrime(getNum);
-
 	}
 
 	static void checkPrime(int a) {
-
 		int temp = 0;
 		if (a == 0 || a == 1)
 			System.out.println(a + " the number not a prime number and composite.");
@@ -27,7 +24,6 @@ public class PrimeOrNot {
 				break;
 			}
 		}
-
 		if (temp == 0)
 			System.out.println(a + " is prime number.");
 		else

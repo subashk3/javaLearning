@@ -17,7 +17,7 @@ public class ArmstrongNumberTwoInterval {
 	}
 
 //check armstrong
-	static void checkArmstrong(int a) {
+	static void armstrongPrint(int a) {
 		int x, res = 0;
 		int temp = a;
 		int count = countNum(temp);
@@ -45,7 +45,7 @@ public class ArmstrongNumberTwoInterval {
 	static void armstrongTwoInterval(int firstNum, int secondNum) {
 
 		for (int i = firstNum; i <= secondNum; i++) {
-			checkArmstrong(i);
+			armstrongPrint(i);
 
 		}
 
