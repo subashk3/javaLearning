@@ -15,10 +15,10 @@ public class GCDRecursion {
 
 	}
 
-	static int gcdRecursion(int a, int b) {
-		if (b != 0)
-			return gcdRecursion(b, a % b);
+	static int gcdRecursion(int firstNum, int secondNum) {
+		if (secondNum != 0)
+			return gcdRecursion(secondNum, firstNum % secondNum);
 		else
-			return a;
+			return firstNum;
 	}
 }

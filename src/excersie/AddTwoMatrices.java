@@ -13,7 +13,7 @@ public class AddTwoMatrices {
 		int row, col;
 		System.out.println("Enter the Number of rows:");
 		row = sc.nextInt();
-		System.out.println("Enter the Number of rows:");
+		System.out.println("Enter the Number of col:");
 		col = sc.nextInt();
 		firstMatrix = new int[row][col];
 		secondMatrix = new int[row][col];

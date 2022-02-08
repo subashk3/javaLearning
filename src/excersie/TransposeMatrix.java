@@ -11,7 +11,7 @@ public class TransposeMatrix {
 		int row, col, trow, tcol;
 		System.out.println("Enter the Number of rows:");
 		row = sc.nextInt();
-		System.out.println("Enter the Number of rows:");
+		System.out.println("Enter the Number of col:");
 		col = sc.nextInt();
 		trow = col;
 		tcol = row;
