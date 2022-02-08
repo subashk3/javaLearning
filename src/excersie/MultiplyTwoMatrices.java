@@ -41,8 +41,9 @@ public class MultiplyTwoMatrices {
 			System.out.println();
 			for (int i = 0; i < frow; i++) {
 				for (int j = 0; j < fcol; j++) {
-					for (int k = 0; k < srow; k++) {
+					for (int k = 0; k < srow; k++) { // Multiply and addition
 						resulMatrix[i][j] += firstMatrix[i][k] * secondMatrix[k][j];
+
 					}
 				}
 			}
