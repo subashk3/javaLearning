@@ -1,3 +1,4 @@
+//66.Program to Multiply Two Matrices Using Multi-dimensional Arrays
 package excersie;
 
 import java.util.Scanner;
@@ -9,45 +10,51 @@ public class MultiplyTwoMatrices {
 		int[][] firstMatrix;
 		int[][] secondMatrix;
 		int[][] resulMatrix;
-		int row, col;
-		System.out.println("Enter the Number of rows:");
-		row = sc.nextInt();
-		System.out.println("Enter the Number of col:");
-		col = sc.nextInt();
-		firstMatrix = new int[row][col];
-		secondMatrix = new int[row][col];
-		resulMatrix = new int[row][col];
+		int frow, fcol, srow, scol;
+		System.out.println("Enter the Number of 1 st matrix rows:");
+		frow = sc.nextInt();
+		System.out.println("Enter the Number of 1 st matrix  col:");
+		fcol = sc.nextInt();
+		System.out.println("Enter the Number of 2 st matrix rows:");
+		srow = sc.nextInt();
+		System.out.println("Enter the Number of 2 st matrix  col:");
+		scol = sc.nextInt();
+		firstMatrix = new int[frow][fcol];
+		secondMatrix = new int[srow][scol];
+		resulMatrix = new int[frow][scol];
 
-		System.out.println("Enter firstMatrix");
-		for (int i = 0; i < row; i++) {
-			for (int j = 0; j < col; j++) {
-				firstMatrix[i][j] = sc.nextInt();
-			}
-		}
-		System.out.println("Enter Second tMatrix");
-		for (int i = 0; i < row; i++) {
-			for (int j = 0; j < col; j++) {
-				secondMatrix[i][j] = sc.nextInt();
-			}
-		}
+		if (fcol == srow) {
 
-		System.out.println();
-		for (int i = 0; i < row; i++) {
-			for (int j = 0; j < col; j++) {
+			System.out.println("Enter firstMatrix");
+			for (int i = 0; i < frow; i++) {
+				for (int j = 0; j < fcol; j++) {
+					firstMatrix[i][j] = sc.nextInt();
+				}
+			}
+			System.out.println("Enter Second tMatrix");
+			for (int i = 0; i < srow; i++) {
+				for (int j = 0; j < scol; j++) {
+					secondMatrix[i][j] = sc.nextInt();
+				}
+			}
 
-				resulMatrix[i][j] = firstMatrix[i][j] * secondMatrix[i][j];
-
-			}
-			}
-		System.out.println("Resu is :");
-		for (int i = 0; i < row; i++) {
-			for (int j = 0; j < col; j++) {
-				System.out.print(resulMatrix[i][j] + " ");
-			}
 			System.out.println();
-		}
-
-
+			for (int i = 0; i < frow; i++) {
+				for (int j = 0; j < fcol; j++) {
+					for (int k = 0; k < srow; k++) {
+						resulMatrix[i][j] += firstMatrix[i][k] * secondMatrix[k][j];
+					}
+				}
+			}
+			System.out.println("Resu is :");
+			for (int i = 0; i < frow; i++) {
+				for (int j = 0; j < scol; j++) {
+					System.out.print(resulMatrix[i][j] + " ");
+				}
+				System.out.println();
+			}
+		} else
+			System.out.println("This matrix unable to Multiply");
 	}
 
 }
