@@ -1,5 +1,4 @@
 //Program to Convert Octal Number to Decimal and vice-versa
-
 package excersie;
 
 import java.util.Scanner;
@@ -13,7 +12,6 @@ public class OctalDecimal {
 		} while (a != 0);
 		return count;
 	}
-
 	static void octal2Decimal(int a) {
 		int count = countNum(a);
 		int res = 0, temp;
