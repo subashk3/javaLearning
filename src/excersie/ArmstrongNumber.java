@@ -7,11 +7,18 @@ public class ArmstrongNumber {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		ArmstrongNumber obj = new ArmstrongNumber();
 		System.out.println("Enter the Number: ");
-		int getNum = sc.nextInt();
-		checkArmstrong(getNum);
+		int getnum = sc.nextInt();
+		int check = obj.checkArmstrong(getnum);
+		if (check == 1) {
+			System.out.println(getnum + " is Armstrong Number.");
+		} else
+			System.out.println(getnum + " is Not Armstrong Number");
+
 	}
 
+// checking count 
 	static int countNum(int a) {
 		int count = 0;
 		do {
@@ -22,26 +29,22 @@ public class ArmstrongNumber {
 		return count;
 	}
 
-	static void checkArmstrong(int a) {
-
+//check armstrong or not	
+	int checkArmstrong(int a) {
 		int x, res = 0;
 		int temp = a;
 		int count = countNum(temp);
 
 		while (a != 0) {
-
 			x = a % 10;
-
 			res = (int) (res + Math.pow(x, count));
-
 			a = a / 10;
 		}
-
 		if (temp == res) {
+			return 1;
 
-			System.out.println(temp + " is Armstrong Number.");
 		} else
-			System.out.println(temp + " is Not Armstrong Number");
+			return 0;
 
 	}
 

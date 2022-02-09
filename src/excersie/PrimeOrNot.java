@@ -7,27 +7,37 @@ public class PrimeOrNot {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		PrimeOrNot obj = new PrimeOrNot();
 		System.out.println("Enter the number:");
-		int getNum = sc.nextInt();
-		checkPrime(getNum);
+		int getnum = sc.nextInt();
+		int check =obj.checkPrime(getnum);
+		
+		if(check == 1) {
+			
+			System.out.println(getnum+ " is prime number.");
+		}else
+			System.out.println(getnum+ " is not a prime number.");
 	}
 
-	static void checkPrime(int a) {
+	int  checkPrime(int getnumber) {
 		int temp = 0;
-		if (a == 0 || a == 1)
-			System.out.println(a + " the number not a prime number and composite.");
+		
+		if (getnumber == 0 || getnumber == 1)
+			System.out.println(getnumber + " the number not a prime number and composite.");
 
-		for (int i = 2; i <= a / 2; i++) {
+		for (int i = 2; i <= getnumber / 2; i++) {
 
-			if (a % i == 0) {
+			if (getnumber % i == 0) {
 				temp = 1;
 				break;
 			}
 		}
 		if (temp == 0)
-			System.out.println(a + " is prime number.");
+			return 1;	
 		else
-			System.out.println(a + " is not prime number.");
+			return 0;
+		
+		
 
 	}
 }
