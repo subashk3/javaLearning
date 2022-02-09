@@ -20,6 +20,7 @@ public class OctalNumber2Decimal {
 				break;
 			}
 		}
+		//check
 		if (decimal != 0)
 			System.out.print("Decimal value of " + num + " is " + decimal);
 	}
