@@ -10,6 +10,7 @@ public class SingleTon {
 		SingleTonClass o1 = SingleTonClass.getInstatnce();
 		
 		o.displayMessage();
+		
 		o1.displayMessage();
 
 	}

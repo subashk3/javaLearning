@@ -1,6 +1,8 @@
-/*Alice and Bob each created one problem for HackerRank. A reviewer rates the two challenges, awarding points on a scale from 1 to 100 for three categories: problem clarity, originality, and difficulty.
+/*Alice and Bob each created one problem for HackerRank. A reviewer rates the two challenges,
+ awarding points on a scale from 1 to 100 for three categories: problem clarity, originality, and difficulty.
 
-The rating for Alice's challenge is the triplet a = (a[0], a[1], a[2]), and the rating for Bob's challenge is the triplet b = (b[0], b[1], b[2]).
+The rating for Alice's challenge is the triplet a = (a[0], a[1], a[2]), and the rating for Bob's challenge
+is the triplet b = (b[0], b[1], b[2]).
 
 The task is to find their comparison points by comparing a[0] with b[0], a[1] with b[1], and a[2] with b[2].
 
@@ -14,14 +16,14 @@ public class CompareTriplets {
 
 	public static String compareTriplets(int[] firstPerson, int[] secondPerson) {
 
-		int Alice = 0;
+		int alice = 0;
 		int Bob = 0;
 
 		for (int i = 0; i < firstPerson.length; i++) {
 
 			if (firstPerson[i] > secondPerson[i]) {
 
-				Alice++;
+				alice++;
 			}
 			if (firstPerson[i] < secondPerson[i]) {
 
@@ -29,17 +31,17 @@ public class CompareTriplets {
 			}
 		}
 
-		return Alice + " " + Bob;
+		return alice + " " + Bob;
 
 	}
 
 	public static void main(String[] args) {
 
-		int Alice[] = { 17, 28, 30 };
+		int alice[] = { 17, 28, 30 };
 
-		int Bob[] = { 99, 16, 8 };
+		int bob[] = { 99, 16, 8 };
 
-		System.out.println(compareTriplets(Alice, Bob));
+		System.out.println(compareTriplets(alice, bob));
 
 	}
 
