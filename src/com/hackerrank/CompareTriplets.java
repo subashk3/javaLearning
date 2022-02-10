@@ -12,34 +12,44 @@ If a[i] = b[i], then neither person receives a point.
 Comparison points is the total points a person earned.*/
 package com.hackerrank;
 
+import java.util.Scanner;
+
 public class CompareTriplets {
 
-	public static String compareTriplets(int[] firstPerson, int[] secondPerson) {
+	public static String compareTriplets(int[] a, int[] b) {
 
 		int alice = 0;
-		int Bob = 0;
+		int bob = 0;
 
-		for (int i = 0; i < firstPerson.length; i++) {
+		for (int i = 0; i < a.length; i++) {
 
-			if (firstPerson[i] > secondPerson[i]) {
+			if (a[i] > b[i]) {
 
-				alice++;
-			}
-			if (firstPerson[i] < secondPerson[i]) {
+				++alice;
 
-				Bob++;
-			}
+			} else if (a[i] < b[i]) {
+
+				bob++;
+				
+			} else
+				continue;
 		}
-
-		return alice + " " + Bob;
-
+		return alice + " " + bob;
 	}
 
 	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int alice[] = new int[3];
 
-		int alice[] = { 17, 28, 30 };
-
-		int bob[] = { 99, 16, 8 };
+		int bob[] = new int[3];
+		for (int i = 0; i < 3; i++) {
+			alice[i] = sc.nextInt();
+		}
+		for (int i = 0; i < 3; i++) {
+			
+			bob[i] = sc.nextInt();
+		}
 
 		System.out.println(compareTriplets(alice, bob));
 

@@ -6,6 +6,7 @@ public class Encapsulation {// banking process
 	private int minbalance = 1000;
 	int balance = 0;
 
+	
 	// check only user
 	public int getMinbalance() {
 		return minbalance;

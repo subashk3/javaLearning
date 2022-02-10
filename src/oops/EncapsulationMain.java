@@ -1,3 +1,4 @@
+/*Encapsulation is wrapping the data (variables) and code acting on the data (methods) together as a single unit*/
 package oops;
 
 import java.util.Scanner;
@@ -7,18 +8,6 @@ public class EncapsulationMain {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		Encapsulation user1 = new Encapsulation();
-
-		// Balance enqury
-		// System.out.println(user1.balance);
-
-		// deposit money
-//		user1.setDeposit(200);
-//		System.out.println(user1.balance);
-//
-//		// checking min balance
-//
-//		System.out.println(user1.getMinbalance());
-
 		int n = 1;
 		while (n != 4) {
 
