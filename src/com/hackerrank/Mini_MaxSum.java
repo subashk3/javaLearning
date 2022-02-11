@@ -20,9 +20,9 @@ public class Mini_MaxSum {
 
 	public static void miniMaxSum(int[] array) {
 
-		int min = array[0];
-		int max = array[0];
-		int sumofarray = 0;
+		long min = array[0];
+		long max = array[0];
+		long sumofarray = 0;
 
 		for (int i = 0; i < array.length; i++) {
 

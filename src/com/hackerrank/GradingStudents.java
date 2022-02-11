@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class GradingStudents {
 //grade system
-
 	public static void gradingStudents(int[] a, int count) {
 		int temp;
 		int result;
@@ -16,9 +15,7 @@ public class GradingStudents {
 			result = temp - a[i];
 			if (result < 3 && temp > 35) {
 				a[i] = temp;
-				
 			}
-			
 		}
 		for (int i = 0; i < count; i++) {
 

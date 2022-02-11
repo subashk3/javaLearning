@@ -18,9 +18,12 @@ class Result {
 	 */
 
 	public static int birthdayCakeCandles(List<Integer> candles) {
-		return 0;
 		// Write your code here
 
+		
+		
+		
+		return 0;
 	}
 
 }
