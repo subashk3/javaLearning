@@ -43,11 +43,11 @@ package com.hackerrank;
 import java.util.Scanner;
 
 public class StrongPassword {
-
 	public static int minimumNumber(int n, String password) {
 		int minimum = 0;
 		char temp;
-		int number_count = 0, lower_case_count = 0, upper_case_count = 0, special_characters_count = 0;
+		int number_count = 0, lower_case_count = 0;
+		int upper_case_count = 0, special_characters_count = 0;
 		for (int i = 0; i < password.length(); i++) {
 			// temp = Character.toString(password.charAt(i));
 			temp = password.charAt(i);
@@ -70,6 +70,7 @@ public class StrongPassword {
 		else
 			return minimum;
 	}
+
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n;

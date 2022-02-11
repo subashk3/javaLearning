@@ -22,7 +22,7 @@ public class ConcentricCirclesArea {
 		System.out.println("Area of the Concentric Circles is: " + areaOfCircle(firstCircleRadius, secondCircleRadius));
 
 		sc.close();
-
+		Binary2Decimal.countNum(secondCircleRadius);
 	}
 
 }
