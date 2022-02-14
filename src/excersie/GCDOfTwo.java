@@ -14,6 +14,7 @@ public class GCDOfTwo {
 		int secondNum = sc.nextInt();
 
 		int commonDiv = 1;
+		
 		for (int i = 1; i <= firstNum; i++) {
 
 			if (firstNum % i == 0 && secondNum % i == 0) {

@@ -8,21 +8,26 @@ public class LCM2Numbers {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-
 		System.out.println("Enmter the two Number:");
-		int firstNum = sc.nextInt();
-		int secondNum = sc.nextInt();
+		int firstnumber = sc.nextInt();
+		int secondnumber = sc.nextInt();
+		int lcm;
 
-		int commonDiv = 1;
-		for (int i = 1; i <= firstNum; i++) {
+		// maximum number between firstNum and secondNum is stored in LCM
 
-			if (firstNum % i == 0 && secondNum % i == 0) {
-				commonDiv =commonDiv* i;
+		if (firstnumber > secondnumber) {
 
+			lcm = firstnumber;
+		} else
+			lcm = secondnumber;
+
+		while (true) {
+			if (lcm % firstnumber == 0 && lcm % secondnumber == 0) {
+				System.out.printf("The LCM of %d and %d is %d.", firstnumber, secondnumber, lcm);
+				break;
 			}
-
+			++lcm;
 		}
-		System.out.println("LCM is " + commonDiv);
 
 	}
 
