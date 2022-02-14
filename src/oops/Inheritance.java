@@ -15,12 +15,13 @@ public class Inheritance {
 		//Only access A class
 		InheritanceClassA obj1 = new InheritanceClassA();
 		obj1.methodA();
-		
-		//Only access A class and B class
+		System.out.println();
+		//Only access A class and B class (Single Inheritance)
 		InheritanceClassB obj2 = new InheritanceClassB();
 		obj2.methodA();
 		obj2.methodB();
-		//Only access A class and B class
+		System.out.println();
+		//Only access A class and B class (Multilevel Inheritance)
 		InheritanceClassC obj3 = new InheritanceClassC();
 		obj3.methodA();
 		obj3.methodB();

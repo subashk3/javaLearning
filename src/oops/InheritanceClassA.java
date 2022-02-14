@@ -1,7 +1,10 @@
 package oops;
 
 class InheritanceClassA {
-
+	InheritanceClassA(){
+		
+		System.out.println("Class A constructor");
+	}
 	public void methodA() {
 
 		System.out.println("This is method A");

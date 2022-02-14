@@ -7,5 +7,6 @@ public interface InterfaceClassSuper {
 	void absMethodTwo();
 
 	void absMethodThree();
+	
 
 }
