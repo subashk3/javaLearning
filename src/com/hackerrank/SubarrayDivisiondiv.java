@@ -1,4 +1,17 @@
 /*https://www.hackerrank.com/challenges/the-birthday-bar/problem?isFullScreen=true
+
+Sample Input 0
+
+5
+1 2 1 3 2
+
+//0 1 2 3 4
+
+3 2
+Sample Output 0
+
+2
+
 */
 package com.hackerrank;
 
