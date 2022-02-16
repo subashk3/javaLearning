@@ -8,7 +8,7 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
-class Result {
+class Result12 {
 
 	/*
 	 * Complete the 'birthdayCakeCandles' function below.
@@ -44,7 +44,7 @@ public class BirthdayCakeCandles {
 			candles.add(candlesItem);
 		}
 
-		int result = ResultOfpro.birthdayCakeCandles(candles);
+		int result = Result12.birthdayCakeCandles(candles);
 
 		bufferedWriter.write(String.valueOf(result));
 		bufferedWriter.newLine();
