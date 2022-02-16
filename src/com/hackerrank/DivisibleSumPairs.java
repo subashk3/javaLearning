@@ -33,7 +33,9 @@ STDIN           Function
 1 3 2 6 1 2     ar = [1, 3, 2, 6, 1, 2]
 Sample Output
 
- 5*/
+ 5
+ link :https://www.hackerrank.com/challenges/divisible-sum-pairs/problem?isFullScreen=true&h_r=next-challenge&h_v=zen
+ */
 package com.hackerrank;
 
 import java.util.Scanner;

@@ -8,9 +8,9 @@ import javax.swing.text.html.HTMLDocument.Iterator;
 public class Hashset {
 
 	public static void main(String[] args) {
-		LinkedHashSet hs = new LinkedHashSet();
-		// HashSet hs = new HashSet();
-
+		/// LinkedHashSet hs = new LinkedHashSet();
+		HashSet hs = new HashSet();
+		hs.add("Hello");
 		hs.add("Subash");
 		hs.add("Subash");
 		hs.add("Chandra");
