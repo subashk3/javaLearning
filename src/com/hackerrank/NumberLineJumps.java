@@ -6,21 +6,15 @@ public class NumberLineJumps {
 
 	public static String kangaroo(int x1, int v1, int x2, int v2) {
 		// Write your code here
-
-		int remider;
-
-		remider = (x1 - x2) % (v2 - v1);
-
+		float remider;
+		remider = (x2 - x1) % (v1 - v2);
 		String res = "";
 		if (v1 > v2) {
 			if (remider == 0) {
-				res = "YES";
-
+			res = "YES";
 			}
 		} else {
-
 			res = "NO";
-
 		}
 		return res;
 	}

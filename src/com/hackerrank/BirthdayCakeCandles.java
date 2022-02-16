@@ -44,7 +44,7 @@ public class BirthdayCakeCandles {
 			candles.add(candlesItem);
 		}
 
-		int result = Result.birthdayCakeCandles(candles);
+		int result = ResultOfpro.birthdayCakeCandles(candles);
 
 		bufferedWriter.write(String.valueOf(result));
 		bufferedWriter.newLine();

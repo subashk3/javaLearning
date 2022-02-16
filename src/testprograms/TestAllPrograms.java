@@ -1,20 +1,30 @@
 package testprograms;
 
+import java.util.Scanner;
+
 public class TestAllPrograms {
 
 	public static void main(String[] args) {
 
-		int a=10, b=0;
-		int c=0;
-		try {
-			
-			c=a/b;
-			
-		}catch(Exception e) {
-			
-			System.err.println("Summa oru error");
+		Scanner sc = new Scanner(System.in);
+
+		int a[] = { 1, 2, 3, 4, 5, 6 };
+
+		int[] b = new int[a.length];
+		int j = 0;
+		System.out.println("B array");
+		for (int i = (a.length - 1); i >= 0; i--) {
+
+			System.out.print(a[i] + " ");
+			b[j] = a[i];
+			++j;
 		}
-		
-		
+
+		System.out.println("\nB array");
+		for (int i : b) {
+
+			System.out.print(i + " ");
+
+		}
 	}
 }
