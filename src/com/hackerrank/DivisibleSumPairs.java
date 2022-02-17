@@ -32,9 +32,10 @@ STDIN           Function
 -----           --------
 6 3             n = 6, k = 3
 1 3 2 6 1 2     ar = [1, 3, 2, 6, 1, 2]
-Sample Output
+Sample Output         0  1  2  3  4  5
 
  5
+ 
  link :https://www.hackerrank.com/challenges/divisible-sum-pairs/problem?isFullScreen=true&h_r=next-challenge&h_v=zen
  */
 package com.hackerrank;
