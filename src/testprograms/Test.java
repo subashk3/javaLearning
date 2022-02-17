@@ -10,6 +10,8 @@ public class Test {
 
 		Scanner scanner = new Scanner(System.in);
 		int N = scanner.nextInt();
+		String s;
+		
 
 		if (N % 2 == 0) {
 			if (N >= 2 && N <= 5 && N > 20) {
