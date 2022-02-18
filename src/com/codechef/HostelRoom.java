@@ -61,7 +61,7 @@ public class HostelRoom {
 					
 					max =X;
 				}
-								
+							
 			}
 			System.out.println(max);
 
