@@ -9,6 +9,7 @@ public class ProtectClass {
 	protected void run() {
 		System.out.println("Running..");
 		
+		
 	}
 	
 }
