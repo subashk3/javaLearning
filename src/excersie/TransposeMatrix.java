@@ -25,6 +25,7 @@ public class TransposeMatrix {
 				firstMatrix[i][j] = sc.nextInt();
 			}
 		}
+		sc.close();
 		System.out.println();
 		for (int i = 0; i < trow; i++) {
 			for (int j = 0; j < tcol; j++) {

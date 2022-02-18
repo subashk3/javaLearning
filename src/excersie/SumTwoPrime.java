@@ -9,6 +9,7 @@ public class SumTwoPrime {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter your Number:");
 		int num = sc.nextInt();
+		sc.close();
 		sumOfPrime(num);
 	}
 

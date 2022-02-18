@@ -77,6 +77,7 @@ public class StrongPassword {
 		String password;
 		n = sc.nextInt();
 		password = sc.next();
+		sc.close();
 		System.out.println(minimumNumber(n, password));
 
 	}

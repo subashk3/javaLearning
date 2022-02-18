@@ -22,6 +22,7 @@ public class CamelCase {
 		Scanner sc = new Scanner(System.in);
 		String mystring;
 		mystring = sc.nextLine();
+		sc.close();
 		System.out.println(camelcase(mystring));
 
 			

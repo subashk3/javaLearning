@@ -57,7 +57,7 @@ public class TimeConversion {
 		Scanner sc = new Scanner(System.in);
 		String s;
 		s = sc.nextLine();
-
+		sc.close();
 		System.out.println(timeConversion(s));
 
 		// timeConversion(s);

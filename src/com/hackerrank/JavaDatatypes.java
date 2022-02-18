@@ -44,6 +44,7 @@ public class JavaDatatypes {
 
 			str[i] = sc.nextLine();
 		}
+		sc.close();
 		javaDatatypes(str);
 
 	}

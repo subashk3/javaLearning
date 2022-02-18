@@ -53,6 +53,7 @@ public class SubarrayDivisiondiv {
 		}
 		int d = sc.nextInt();
 		int m = sc.nextInt();
+		sc.close();
 		System.out.println(birthday(s, d, m));
 	}
 }

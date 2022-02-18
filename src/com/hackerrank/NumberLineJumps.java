@@ -11,7 +11,7 @@ public class NumberLineJumps {
 		String res = "";
 		if (v1 > v2) {
 			if (remider == 0) {
-			res = "YES";
+				res = "YES";
 			}
 		} else {
 			res = "NO";
@@ -25,7 +25,7 @@ public class NumberLineJumps {
 		int v1 = sc.nextInt();
 		int x2 = sc.nextInt();
 		int v2 = sc.nextInt();
-
+		sc.close();
 		System.out.println(kangaroo(x1, v1, x2, v2));
 	}
 }// 0 3 4 2

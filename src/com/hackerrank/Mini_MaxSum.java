@@ -9,7 +9,6 @@ The minimum sum is  and the maximum sum is . The function prints
 *
 link: https://www.hackerrank.com/challenges/mini-max-sum/problem?isFullScreen=true&h_r=next-challenge&h_v=zen*/
 
-
 //10/15 test cases failed :(
 
 package com.hackerrank;
@@ -36,7 +35,7 @@ public class Mini_MaxSum {
 			}
 			sumofarray += array[i];
 		}
-		System.out.println((sumofarray-max)+ " "+(sumofarray-min));
+		System.out.println((sumofarray - max) + " " + (sumofarray - min));
 	}
 
 	public static void main(String[] args) {
@@ -47,7 +46,7 @@ public class Mini_MaxSum {
 		for (int i = 0; i < 5; i++) {
 			arry[i] = sc.nextInt();
 		}
-
+		sc.close();
 		miniMaxSum(arry);
 	}
 

@@ -68,6 +68,7 @@ public class DivisibleSumPairs {
 
 			a[i] = sc.nextInt();
 		}
+		sc.close();
 		System.out.println(divisibleSumPairs(n, k, a));
 
 	}

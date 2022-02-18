@@ -22,7 +22,7 @@ public class SimpleCalculator {
 		System.out.println("Enter the operator (+ - * / )");
 
 		o = sc.next().charAt(0);
-
+		sc.close();
 		int res = calculator(f, s, o);
 
 		System.out.println("Result is: " + res);

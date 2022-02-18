@@ -33,7 +33,7 @@ public class MigratoryBirds {
 		for (int i = 0; i < n; i++) {
 			array[i] = sc.nextInt();
 		}
-
+		sc.close();
 		System.out.println(migratoryBirds(array));
 
 	}

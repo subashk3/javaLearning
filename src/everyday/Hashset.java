@@ -16,18 +16,16 @@ public class Hashset {
 		hs.add("Chandra");
 		hs.add("Bose");
 		hs.add("Bose");
-		hs.add("Bose");
-		hs.add("Bose");
-		hs.add("Bose");
-		hs.add("Bose");
-		hs.add("Bose");
+		
 
 		System.out.println(hs);
+		
 		// String[] ar = (String[]) hs.clone();
 
 		// System.out.println(ar.toString());
 
 		// Iterator it = (Iterator) hs.iterator();
+		
 		// System.out.println(hs.size());
 
 	}

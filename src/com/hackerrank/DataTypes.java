@@ -12,6 +12,7 @@ public class DataTypes {
 		Scanner sc = new Scanner(System.in);
 	//	System.out.println("Enter number of test:");
 		int t = sc.nextInt();
+		sc.close();
 		int a = 0;
 		for (int i = 0; i < t; i++) {
 			try {

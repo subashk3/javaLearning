@@ -9,6 +9,7 @@ public class SumOfNaturalNumbers {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the last number of Natrual Number: ");
 		int lastNum = sc.nextInt();
+		sc.close();
 		int sumOfNum = 0;
 		for (int i = 1; i <= lastNum; i++)
 			sumOfNum += i;

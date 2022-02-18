@@ -30,7 +30,7 @@ public class CompareTriplets {
 			} else if (a[i] < b[i]) {
 
 				bob++;
-				
+
 			} else
 				continue;
 		}
@@ -39,7 +39,7 @@ public class CompareTriplets {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		
+
 		int alice[] = new int[3];
 
 		int bob[] = new int[3];
@@ -47,10 +47,10 @@ public class CompareTriplets {
 			alice[i] = sc.nextInt();
 		}
 		for (int i = 0; i < 3; i++) {
-			
+
 			bob[i] = sc.nextInt();
 		}
-
+		sc.close();
 		System.out.println(compareTriplets(alice, bob));
 
 	}

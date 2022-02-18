@@ -65,7 +65,7 @@ public class GradingStudents {
 
 			a[i] = sc.nextInt();
 		}
-
+		sc.close();
 		gradingStudents(a, n);
 	}
 

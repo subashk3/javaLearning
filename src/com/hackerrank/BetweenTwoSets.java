@@ -119,6 +119,7 @@ public class BetweenTwoSets {
 
 			b[i] = sc.nextInt();
 		}
+		sc.close();
 		Arrays.sort(a);
 		Arrays.sort(b);
 		System.out.println(getTotalX(a, b));

@@ -97,7 +97,7 @@ public class AppleOrange {
 
 			oranges[i] = sc.nextInt();
 		}
-
+		sc.close();
 		countApplesAndOranges(s, t, a, b, apples, oranges);
 
 	}

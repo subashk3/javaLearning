@@ -100,6 +100,7 @@ public class BreakingRecords {
 
 			scores[i] = sc.nextInt();
 		}
+		sc.close();
 		breakingRecords(scores);
 	}
 
