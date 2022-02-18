@@ -18,6 +18,7 @@ public class Hashset {
 		hs.add(1);
 		hs.add(1);
 
+		
 		System.out.println(hs);
 		
 		TreeSet tr = new TreeSet(hs);
