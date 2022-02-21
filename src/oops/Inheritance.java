@@ -10,8 +10,12 @@ Type of Iheritance
 package oops;
 
 public class Inheritance {
-
+	
+	
 	public static void main(String[] args) {
+		
+		//System.out.println("JVM start");
+		
 		//Only access A class
 		InheritanceClassA obj1 = new InheritanceClassA();
 		obj1.methodA();
