@@ -1,4 +1,5 @@
 /*There is a large pile of socks that must be paired by color. 
+
 Given an array of integers representing the color of each sock, determine how many pairs of socks with matching colors there are.
 
 Example
@@ -45,10 +46,9 @@ import java.util.*;
 
 public class SalesMatch {
 	public static int sockMerchant(int n, int[] ar) {
-		int count = 0;	
-		
+		int count = 0;
+		int ct = 0;
 		HashSet st = new HashSet();
-		
 		for (int i = 0; i < ar.length; i++) {
 			int temp = ar[i];
 			if (!st.contains(temp)) {
@@ -57,8 +57,10 @@ public class SalesMatch {
 				count++;
 				st.remove(temp);
 			}
+			
+
 		}
-		
+
 		return count;
 	}
 
@@ -69,8 +71,8 @@ public class SalesMatch {
 		for (int i = 0; i < n; i++) {
 			ar[i] = sc.nextInt();
 		}
-		
+
 		System.out.println(sockMerchant(n, ar));
-		
+
 	}
 }
