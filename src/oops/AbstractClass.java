@@ -15,9 +15,6 @@ public class AbstractClass extends AbsClassSuper implements InterfaceClassSuper 
 
 	}
 
-	@Override
-	public void absMethodThree() {
-
-	}
+	
 
 }

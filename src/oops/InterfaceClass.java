@@ -23,8 +23,26 @@ public class InterfaceClass implements InterfaceClassSuper, InterfaceClassSuper1
 		InterfaceClassSuper obj = new InterfaceClass();
 		
 		obj.absMethodOne();
-		obj.absMethodTwo();
-		obj.absMethodThree();	
+		obj.absMethodOne();
+		obj.absMethodOne();	
+	}
+
+	@Override
+	public void absMethodOne1() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void absMethodTwo1() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void absMethodThree1() {
+		// TODO Auto-generated method stub
+		
 	}
 	
 
