@@ -1,7 +1,11 @@
 package oops;
 
-public class InterfaceClass implements InterfaceClassSuper {
+public class InterfaceClass implements InterfaceClassSuper, InterfaceClassSuper1 {
 
+	
+	
+	
+	
 	public void absMethodOne() {
 		System.out.println("1");
 	}
@@ -22,5 +26,16 @@ public class InterfaceClass implements InterfaceClassSuper {
 		obj.absMethodTwo();
 		obj.absMethodThree();	
 	}
+	
+
+}
+interface InterfaceClassSuper1 {
+
+	public void absMethodOne1();
+
+	public void absMethodTwo1();
+
+	public void absMethodThree1();
+	
 
 }

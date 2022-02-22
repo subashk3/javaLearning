@@ -1,30 +1,24 @@
 package testprograms;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class TestAllPrograms {
 
 	public static void main(String[] args) {
-
-		Scanner sc = new Scanner(System.in);
-
-		int a[] = { 1, 2, 3, 4, 5, 6 };
-
-		int[] b = new int[a.length];
-		int j = 0;
-		System.out.println("B array");
-		for (int i = (a.length - 1); i >= 0; i--) {
-
-			System.out.print(a[i] + " ");
-			b[j] = a[i];
-			++j;
-		}
-
-		System.out.println("\nB array");
-		for (int i : b) {
-
-			System.out.print(i + " ");
-
+		ArrayList<String> cars = new ArrayList<String>();
+		cars.add("Volvo");
+		cars.add("BMW");
+		cars.add("Ford");
+		cars.add("Mazda");
+		Collections.sort(cars);; // Sort cars
+		for (String i : cars) {
+			System.out.println(i);
 		}
 	}
 }

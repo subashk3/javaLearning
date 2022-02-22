@@ -1,5 +1,6 @@
 package oops;
 
+
 class InheritanceClassA {
 	InheritanceClassA(){
 		

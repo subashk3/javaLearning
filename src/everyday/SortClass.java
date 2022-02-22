@@ -15,6 +15,8 @@ public class SortClass {
 					a[j] = a[j + 1];
 					a[j + 1] = temp;
 				}
+				//System.out.println(a[i]);
+				
 			}
 		}
 		for (int k : a)
@@ -27,10 +29,10 @@ public class SortClass {
 		int n = a.length;
 
 		SortClass o = new SortClass();
-		// o.bubbleSorting(a, n);
-		o.selectionSorting(a, n);
-		System.err.println();
-		o.insertSorting(a, n);
+		 o.bubbleSorting(a, n);
+			/*
+			 * o.selectionSorting(a, n); System.err.println(); o.insertSorting(a, n);
+			 */
 	}
 
 	public void insertSorting(int[] a, int n) {
