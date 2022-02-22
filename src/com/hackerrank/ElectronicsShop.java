@@ -1,4 +1,5 @@
 /*A person wants to determine the most expensive computer keyboard and USB drive that can be purchased with 
+
 a give budget. Given price lists for keyboards and USB drives and a budget, find the cost to buy them. If it is not possible to buy both items, return .
 
 Example
@@ -45,6 +46,7 @@ Sample Input 1
 5 1 1
 4
 5
+
 Sample Output 1
 
 -1
@@ -57,8 +59,8 @@ import java.util.*;
 
 public class ElectronicsShop {
 	static int getMoney(int[] keyboards, int[] drives, int b) {
-		int maximum = 0;
-		int sum = 0;
+		int maximum = 0;// return maximum amount;
+		int sum = 0;//sum of the two product in price
 		for (int i = 0; i < keyboards.length; i++) {
 			for (int j = 0; j < drives.length; j++) {
 				sum = keyboards[i] + drives[j];
@@ -75,9 +77,9 @@ public class ElectronicsShop {
 	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int b = sc.nextInt();
-		int n = sc.nextInt();
-		int m = sc.nextInt();
+		int b = sc.nextInt(); // Price
+		int n = sc.nextInt(); // Keyboards size
+		int m = sc.nextInt(); // Drives size
 		int[] keyboards = new int[n];
 		int[] drives = new int[m];
 		for (int i = 0; i < n; i++) {
