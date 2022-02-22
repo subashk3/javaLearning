@@ -2,11 +2,11 @@ package oops;
 
 public interface InterfaceClassSuper {
 
-	void absMethodOne();
+	public void absMethodOne();
 
-	void absMethodTwo();
+	public void absMethodTwo();
 
-	void absMethodThree();
+	public void absMethodThree();
 	
 
 }

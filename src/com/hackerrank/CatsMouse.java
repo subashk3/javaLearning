@@ -59,19 +59,20 @@ public class CatsMouse {
 	
 	public static void main(String[] args) {
 		
-		Scanner sc = new Scanner(System.in);
-		int count = sc.nextInt();
-		while (count > 0) {
-			int catA = sc.nextInt();
-			int catB = sc.nextInt();
-			int mouse = sc.nextInt();
-			if (Math.abs(catA - mouse) > Math.abs(catB - mouse)) {
-				System.out.println("Cat B");
-			} else if (Math.abs(catA - mouse) < Math.abs(catB - mouse)) {
-				System.out.println("Cat A");
-			} else
-				System.out.println("Mouse C");
-			count--;
+		try (Scanner sc = new Scanner(System.in)) {
+			int count = sc.nextInt();
+			while (count > 0) {
+				int catA = sc.nextInt();
+				int catB = sc.nextInt();
+				int mouse = sc.nextInt();
+				if (Math.abs(catA - mouse) > Math.abs(catB - mouse)) {
+					System.out.println("Cat B");
+				} else if (Math.abs(catA - mouse) < Math.abs(catB - mouse)) {
+					System.out.println("Cat A");
+				} else
+					System.out.println("Mouse C");
+				count--;
+			}
 		}
 
 		

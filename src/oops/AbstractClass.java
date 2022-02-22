@@ -1,7 +1,7 @@
 package oops;
 
-public class AbstractClass extends AbsClassSuper {
-	void absMethodOne() {
+public class AbstractClass extends AbsClassSuper implements InterfaceClassSuper {
+	public void absMethodOne() {
 		System.out.println("First Method Action:-->");
 
 	}
@@ -12,7 +12,11 @@ public class AbstractClass extends AbsClassSuper {
 		AbsClassSuper obj = new AbstractClass();
 		obj.absMethodOne();
 		obj.absMethodTwo();
-	
+
+	}
+
+	@Override
+	public void absMethodThree() {
 
 	}
 

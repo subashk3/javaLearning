@@ -13,7 +13,7 @@ public class Employees {
 		namelist[2] = new Employer("Ram", "Operator", 15000);
 		namelist[3] = new Employer("Suresh", "Helper", 10000);
 		namelist[4] = new Employer("Raju", "Helper", 10000);
-
+		sc.close();
 	}
 
 }

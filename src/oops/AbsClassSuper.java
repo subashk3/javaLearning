@@ -1,10 +1,10 @@
 package oops;
 
-abstract public class AbsClassSuper {
+abstract public class AbsClassSuper implements InterfaceClassSuper{
 
-	abstract void absMethodOne();// fully abstract
+	public abstract void absMethodOne();// fully abstract
 
-	void absMethodTwo() { // partial abstract
+	public void absMethodTwo() { // partial abstract
 
 		System.out.println("Second Method Action:-->");
 	}
