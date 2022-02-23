@@ -21,36 +21,32 @@ public class ConsecutiveIntegers {
 
 	public long[] sumOfThree(long num) {
 
-		// System.out.println(Long.MAX_VALUE);
-		long[] a = new long[3];
 		// int j=1,k=1;
-		long i = (int) (num / 3);
-		--i;
-		System.out.println(i);
-		long j = i + 1, k = i + 2;
-
-		if (num > 4) {
-
-			for (; i < num / 2; i++) {
-				if ((i + j + k) == num) {
-					a[0] = i;
-					a[1] = j;
-					a[2] = k;
-				}
-				j++;
-				k++;
-			}
-		}
-
-		if (a[1] > 0) {
+		long[] a = new long[3];
+		if (num % 3 == 0) {
+			a[0] = (num / 3) - 1;
+			a[1] = a[0] + 1;
+			a[2] = a[1] + 1;
 			return a;
 		} else
 			return new long[0];
+		/*
+		 * long i = (int) (num / 3); --i; System.out.println(i); long j = i + 1, k = i +
+		 * 2;
+		 * 
+		 * if (num > 4) {
+		 * 
+		 * for (; i < num / 2; i++) { if ((i + j + k) == num) { a[0] = i; a[1] = j; a[2]
+		 * = k; } j++; k++; } }
+		 * 
+		 * if (a[1] > 0) { return a; } else return new long[0];
+		 */		
 	}
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int num = sc.nextInt();
+		sc.close();
 		ConsecutiveIntegers o = new ConsecutiveIntegers();
 		long a[] = o.sumOfThree(num);
 		for (long x : a)

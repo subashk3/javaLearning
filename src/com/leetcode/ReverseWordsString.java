@@ -1,5 +1,6 @@
 /*Given an input string s, reverse the order of the words.
 
+
 A word is defined as a sequence of non-space characters. The words in s will be separated by at least one space.
 
 Return a string of the words in reverse order concatenated by a single space.
@@ -28,7 +29,11 @@ Constraints:
 
 1 <= s.length <= 104
 s contains English letters (upper-case and lower-case), digits, and spaces ' '.
-There is at least one word in s.*/
+There is at least one word in s.
+
+Link: https://leetcode.com/problems/reverse-words-in-a-string/
+
+*/
 package com.leetcode;
 
 public class ReverseWordsString {
@@ -54,7 +59,6 @@ public class ReverseWordsString {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		System.out.println(reverseWords("a good   example"));
 	}

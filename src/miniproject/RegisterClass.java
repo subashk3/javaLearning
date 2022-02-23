@@ -16,6 +16,7 @@ public class RegisterClass implements DateOfBirth{
 		sc.close();
 		DobClass obj = new DobClass();
 		dob = obj.get(this);
+		
 		/*
 		 * dob = obj.get(new DateOfBirth() {
 		 * 
@@ -25,6 +26,7 @@ public class RegisterClass implements DateOfBirth{
 		 * 
 		 * });
 		 */
+		
 	}
 
 	public void printForm() {
@@ -42,7 +44,7 @@ public class RegisterClass implements DateOfBirth{
 
 	@Override
 	public String getDob(String dob) {
-		return dob;
+		return dob; 
 	}
 
 //Interface method
