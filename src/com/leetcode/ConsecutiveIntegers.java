@@ -20,9 +20,12 @@ import java.util.Scanner;
 public class ConsecutiveIntegers {
 
 	public long[] sumOfThree(long num) {
+
+		// System.out.println(Long.MAX_VALUE);
 		long[] a = new long[3];
 		// int j=1,k=1;
-		long i = (int) ((num / 2) / 3);
+		long i = (int) (num / 3);
+		--i;
 		System.out.println(i);
 		long j = i + 1, k = i + 2;
 

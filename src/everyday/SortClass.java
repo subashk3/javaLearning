@@ -4,6 +4,7 @@ public class SortClass {
 	// Bubble Sorting
 	public void bubbleSorting(int[] a, int n) {
 
+		
 		// first loop
 		for (int i = 1; i < n; i++) {
 
