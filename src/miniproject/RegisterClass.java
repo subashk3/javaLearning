@@ -2,40 +2,57 @@ package miniproject;
 
 import java.util.Scanner;
 
-public class RegisterClass {
-	String name;
+public class RegisterClass implements DateOfBirth{
+	String emp_name;
 	int empid;
 	String dob;
 
 	public void enterForm() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the name:");
-		this.name = sc.nextLine();
+		emp_name = sc.nextLine();
 		System.out.println("Enter the empid:");
-		this.empid = sc.nextInt();
+		empid = sc.nextInt();
+		sc.close();
 		DobClass obj = new DobClass();
-		this.dob = obj.get(d);
+		dob = obj.get(this);
+		/*
+		 * dob = obj.get(new DateOfBirth() {
+		 * 
+		 * @Override public String getDob(String dob) {
+		 * 
+		 * return dob; }
+		 * 
+		 * });
+		 */
 	}
 
 	public void printForm() {
-		System.out.println("Your Name: " + this.name);
-		System.out.println("Your id  : " + this.empid);
-		System.out.println("Your DOB : " + this.dob);
+		System.out.println("Your Name: " + emp_name);
+		System.out.println("Your id  : " + empid);
+		System.out.println("Your DOB : " + dob);
 	}
 
 	public static void main(String[] args) {
 		RegisterClass o = new RegisterClass();
 		o.enterForm();
 		o.printForm();
+
+	}
+
+	@Override
+	public String getDob(String dob) {
+		return dob;
 	}
 
 //Interface method
-	static DateOfBirth d = new DateOfBirth() {
-		@Override
-		public String getDob(String dob) {
-
-			return dob;
-		}
-
-	};
+	/*
+	 * static DateOfBirth d = new DateOfBirth() {
+	 * 
+	 * @Override public String getDob(String dob) {
+	 * 
+	 * return dob; }
+	 * 
+	 * };
+	 */
 }

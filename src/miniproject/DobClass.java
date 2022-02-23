@@ -15,6 +15,7 @@ public class DobClass {
 		System.out.println("Enter the DOB (DD-MM-YYYY):");
 		Scanner sc = new Scanner(System.in);
 		String s = d.getDob(sc.nextLine());
+		sc.close();
 		return s;
 	}
 
