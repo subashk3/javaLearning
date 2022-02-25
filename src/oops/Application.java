@@ -12,7 +12,6 @@ class Other {
 	}
 
 }
-
 //Static Inner class
 class Other1 {
 	static class StaticInner {
@@ -21,14 +20,10 @@ class Other1 {
 		}
 	}
 }
-
 // Local class Only visible in local class
 class Other2 {
-
 	public void localMethod() {
-
 		class LocalClass { // Local Methods
-
 			public void run() {
 				System.out.println("This is Local inner class Method");
 			}
@@ -37,27 +32,18 @@ class Other2 {
 		LocalClass n = new LocalClass();
 		n.run();
 	}
-
 }
-
-
 abstract class AnonyClas{
-	
-	
 	abstract void anonymus(); 
 }
 public class Application{
-
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 		System.out.println("----------------------");
 		System.out.println();
 		// Non static inner class
 		Other o = new Other();
 		Other.InnerClass ob = o.new InnerClass();
 		ob.inClass();
-
 		System.out.println();
 
 		// Static inner class
