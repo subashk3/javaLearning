@@ -66,8 +66,6 @@ public class UtopianTree {
 			} else
 				h += 1;
 		}
-
-		
 		// System.out.println(h);
 
 		return h;

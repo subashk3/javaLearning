@@ -1,16 +1,12 @@
 package oops;
-
 //Non- static Inner class
 class Other {
 	class InnerClass {
 
 		public void inClass() {
-
 			System.out.println("This is inner class Method");
 		}
-
 	}
-
 }
 //Static Inner class
 class Other1 {
@@ -64,6 +60,9 @@ public class Application{
 		};
 		
 		o3.anonymus();
+		System.exit(0);
+	
+	
 		
 		
 
