@@ -9,11 +9,14 @@ public class AbstractClass extends AbsClassSuper {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		AbstractClass obj =  new AbstractClass();
-		obj.absMethodOne();
-		obj.absMethodTwo();
-		obj.absMethodThree();
-	//	obj.run2();
+		/*
+		 * AbstractClass obj = new AbstractClass(); obj.absMethodOne();
+		 * obj.absMethodTwo(); obj.absMethodThree();
+		 */
+		// obj.run2();
+
+		Circle sh1 = new Circle("RED", 6);
+		System.out.println(sh1.toString());
 
 	}
 

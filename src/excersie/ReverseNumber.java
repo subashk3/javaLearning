@@ -12,10 +12,8 @@ public class ReverseNumber {
 		int getNum = sc.nextInt();
 		System.out.println(reverseNum(getNum));
 	}
-
 	static int reverseNum(int a) {
 		int outNum = 0, temp;
-
 		while (a != 0) {
 
 			temp = a % 10;
