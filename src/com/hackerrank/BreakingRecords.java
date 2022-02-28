@@ -63,15 +63,13 @@ package com.hackerrank;
 import java.util.Scanner;
 
 public class BreakingRecords {
-	//
+
 	public static void breakingRecords(int[] a) {
 
 		int max = a[0];
 		int min = a[0];
 		int result[] = new int[2];
-
 		for (int i = 0; i < a.length; i++) {
-
 			if (max < a[i]) {
 				max = a[i];
 				result[0]++;

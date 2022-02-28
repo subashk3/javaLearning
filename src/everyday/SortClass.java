@@ -45,26 +45,27 @@ public class SortClass {
 			}
 
 		}
+		//Arrays.sort(a);
 		for (int k : a)
 			System.out.print(k + " ");
 
 	}
 
-	public void selectionSorting(int[] a, int n) {
+	public void selectionSorting(int[] arr, int n) {
 
 		for (int i = 0; i < n - 1; i++) {
 			for (int j = i + 1; j < n; j++) {
-				if (a[i] > a[j]) {
-					int temp = a[j];
-					a[j] = a[i];
-					a[i] = temp;
+				if (arr[i] > arr[j]) {
+					int temp = arr[j];
+					arr[j] = arr[i];
+					arr[i] = temp;
 				}
 			}
 			/*
 			 * int temp = a[min]; a[min] = a[i]; a[i] = temp;
 			 */
 		}
-		for (int k : a)
+		for (int k : arr)
 			System.out.print(k + " ");
 
 	}

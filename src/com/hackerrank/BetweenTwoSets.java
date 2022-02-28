@@ -82,6 +82,7 @@ public class BetweenTwoSets {
 		for (int sol : a) {
 
 			lcm = findLCM(lcm, sol);
+			//a*b = lcm *gcd
 
 		}
 		int gcm = b[0];
