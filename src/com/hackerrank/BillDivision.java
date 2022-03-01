@@ -75,6 +75,7 @@ class Result {
 	}
 
 }
+
 public class BillDivision {
 	public static void main(String[] args) throws IOException {
 
@@ -91,4 +92,6 @@ public class BillDivision {
 
 		Result.bonAppetit(bill, k, b);
 	}
+
+	
 }

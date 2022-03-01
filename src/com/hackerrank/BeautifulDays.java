@@ -1,6 +1,7 @@
 /*
 
-Lily likes to play games with integers. She has created a new game where she determines the difference between a number and its reverse. For instance, given the number , its reverse is . Their difference is . The number  reversed is , and their difference is .
+Lily likes to play games with integers. She has created a new game where she determines the difference 
+between a number and its reverse. For instance, given the number , its reverse is . Their difference is . The number  reversed is , and their difference is .
 
 She decides to apply her game to decision making. She will look at a numbered range of days and will only go to a movie on a beautiful day.
 
@@ -30,6 +31,7 @@ Sample Input
 Sample Output
 
 2
+
 Explanation
 
 Lily may go to the movies on days , , , and . We perform the following calculations to determine which days are beautiful:
@@ -49,8 +51,8 @@ public class BeautifulDays {
 	public static int reverseNumber(int a) {
 		int rem;
 		int res = 0;
-		while (a != 0) {
-			rem = a % 10;
+		while (a != 0) {//20
+			rem = a % 10;//0
 			res = (res * 10) + rem;
 			a = a / 10;
 		}
