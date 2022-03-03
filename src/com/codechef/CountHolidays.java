@@ -12,12 +12,10 @@ public class CountHolidays {
 				if (a[i] == temp[j]) {
 					count++;
 				}
-
 			}
 		}
 		int holidays = 8 + n - count;
 		System.out.println(holidays);
-
 	}
 
 	public static void main(String[] args) {
