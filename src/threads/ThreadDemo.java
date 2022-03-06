@@ -24,18 +24,15 @@ class Count2 extends Thread {
 			try {
 				Thread.sleep(5000);
 			} catch (Exception e) {
-
 			}
 		}
 	}
-
 }
 
 public class ThreadDemo {
 	public static void main(String[] args) throws InterruptedException {
 		Count c = new Count();
 		Count2 c1 = new Count2();
-
 		c.start();
 		c1.start();
 		if (c1.isAlive())

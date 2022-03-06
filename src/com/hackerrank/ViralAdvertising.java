@@ -1,5 +1,6 @@
 /*
-HackerLand Enterprise is adopting a new viral advertising strategy. When they launch a new product, they advertise it to exactly  people on social media.
+HackerLand Enterprise is adopting a new viral advertising strategy. 
+When they launch a new product, they advertise it to exactly  people on social media.
 
 On the first day, half of those  people (i.e., ) like the advertisement and each shares it with  of their friends. At the beginning of the second day,  people receive the advertisement.
 
