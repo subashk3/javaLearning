@@ -90,7 +90,7 @@ public class BillDivision {
 
 		int b = sc.nextInt();
 
-		Result.bonAppetit(bill, k, b);
+		Ttt.bonAppetit(bill, k, b);
 	}
 
 	
