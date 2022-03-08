@@ -1,3 +1,4 @@
+/*https://www.hackerrank.com/challenges/find-digits/problem*/
 package com.hackerrank;
 
 import java.util.Scanner;
@@ -10,10 +11,8 @@ public class FindDigits {
 		int rem;
 		while (n > 0) {
 			rem = n % 10;
-
 			if (rem != 0 && (temp) % rem == 0) {
 				count++;
-
 			}
 
 			n = n / 10;
