@@ -1,4 +1,5 @@
 /*283. Move Zeroes
+
 Easy
 
 8337
@@ -42,8 +43,7 @@ public class MoveZeroes {
 				j++;
 			}
 		}
-		// for(int e:nums)
-		// System.out.print(e+" ");
+		
 		while (j < len) {
 			nums[j] = 0;
 			j++;
