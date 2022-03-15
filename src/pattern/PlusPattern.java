@@ -22,6 +22,7 @@ public class PlusPattern {
 		String getstr = "Subashk";
 
 		plusPatter(getstr);
+		System.out.println("Hello");
 	}
 
 }
