@@ -1,5 +1,7 @@
 package testprograms;
 
+import java.util.*;
+
 public class Maja {
 
 	public static void main(String[] args) {
@@ -11,10 +13,9 @@ public class Maja {
 			if ((i > 1) && (i < j) && (j < n) && (i + j) == n) {
 
 				System.out.println(i + " " + j);
-			}
-//System.out.println("o");
-		}
+			} // System.out.println("o"); }
 
+		}
 	}
 
 }
