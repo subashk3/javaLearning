@@ -22,6 +22,7 @@ class Form {
 			}
 		};
 		c.assignDob(this);
+		System.out.println();
 	}
 
 	void getdetail() {
