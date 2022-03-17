@@ -11,6 +11,7 @@ public class CreateFolder {
 		String s = "C:\\Users\\Jana\\Desktop\\Files\\sample\\";
 		System.out.println("Enter your file name with extension:");
 		s += sc.next();
+		sc.close();
 		File f = new File(s);
 		f.createNewFile();
 
@@ -23,11 +24,10 @@ public class CreateFolder {
 		} else
 			return;
 
+		
 	}
 
 	public static void main(String[] args) throws IOException {
-
-		Scanner sc = new Scanner(System.in);
 
 		createFiles();
 

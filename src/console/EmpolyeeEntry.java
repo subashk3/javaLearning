@@ -5,15 +5,15 @@ import java.util.*;
 
 public class EmpolyeeEntry {
 
-	ArrayList<GetData> al = new ArrayList<GetData>();
+	private ArrayList<GetData> al = new ArrayList<GetData>();
+	//static ArrayInput fileInput = new ArrayInput();
 
-	public static void main(String[] args) {
-
+	public static void main(String[] args) throws Exception {
 		Scanner sc = new Scanner(System.in);
 		EmpolyeeEntry obj = new EmpolyeeEntry();
 		while (true) {
 			System.out.println(
-					"Select choice:\n Press 1 add data \n Press 2 for search employees\n Press 3 Print All\n Press 4 Exit");
+					"Select choice:\n Press 1 add data \n Press 2 for search employees\n Press 3 Print All \n Press 4 Exit");
 			try {
 				int option = sc.nextInt();
 
@@ -23,7 +23,7 @@ public class EmpolyeeEntry {
 					obj.addEntry();
 					break;
 				case 2:
-					System.out.println("Serach by Name: (1)\nSearch by EMPID: (2)");
+					System.out.println("Search by Name: (1)\nSearch by EMPID: (2)");
 					try {
 						int choice = sc.nextInt();
 						switch (choice) {
@@ -43,7 +43,9 @@ public class EmpolyeeEntry {
 				case 3:
 					obj.printEmp();
 					break;
+
 				case 4:
+					
 					System.exit(0);
 					break;
 				default:
@@ -64,18 +66,30 @@ public class EmpolyeeEntry {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter Name:");
 		String name = sc.nextLine();
+		int flag = 1;
+
 		for (GetData x : al) {
 			if (x.getName().equalsIgnoreCase(name)) {
 				System.out.println("\nName      :" + x.getName());
 				System.out.println("EMP ID    :" + x.getEmpid());
 				System.out.println("Gender    :" + x.getGender());
 				System.out.println("Join Date :" + x.getJoinDate() + "\n");
+				flag = 0;
 			}
+		}
+		if (flag == 1) {
+			System.out.println("No data found\n");
 		}
 	}
 
-	private void printEmp() {
+	private void printEmp() throws Exception {
 		int i = 1;
+		//ArrayList<GetData> temp = fileInput.getData();
+		
+		if (al.isEmpty()) {
+			System.out.println("No data found\n");
+			return;
+		}
 		for (GetData x : al) {
 			System.out.println("Detail " + (i++));
 			System.out.println();
@@ -85,37 +99,41 @@ public class EmpolyeeEntry {
 			System.out.println("Join Date :" + x.getJoinDate());
 			System.out.println();
 		}
-
 	}
-
-	private void searchEmp() {
+	private void searchEmp() throws Exception {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter EMPID:");
 		String employeeName = sc.nextLine();
+//		ArrayList<GetData> temp = fileInput.getData();
+		int flag = 1;
 		for (GetData get : al) {
 			if (get.getEmpid().equals(employeeName)) {
 				System.out.println("\nName      :" + get.getName());
 				System.out.println("EMP ID    :" + get.getEmpid());
 				System.out.println("Gender    :" + get.getGender());
 				System.out.println("Join Date :" + get.getJoinDate() + "\n");
+				flag = 0;
 			}
 		}
+		if (flag == 1) {
+			System.out.println("No data found\n");
+		}
 	}
-
-	private void addEntry() {
+	private void addEntry() throws Exception {
 
 		Scanner sc = new Scanner(System.in);
-		GetData o = new GetData();
+		GetData get = new GetData();
 		System.out.println("Enter employee Name:");
-		o.setName(sc.nextLine());
+		get.setName(sc.nextLine());
 		System.out.println("Enter employee id:");
-		o.setEmpid(sc.nextLine());
+		get.setEmpid(sc.nextLine());
 		System.out.println("Enter employee Gender:");
-		o.setGender(sc.nextLine());
+		get.setGender(sc.nextLine());
 		System.out.println("Enter employee Join date (dd-mm-yyyy):");
-		o.setJoinDate(sc.nextLine());
-		al.add(o);
-		System.out.println("Sucessfully added..");
+		get.setJoinDate(sc.nextLine());
+		al.add(get);
+//		fileInput.setData(al);
+		System.out.println("Sucessfully added..\n");
 
 	}
 
