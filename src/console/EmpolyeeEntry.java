@@ -75,6 +75,7 @@ public class EmpolyeeEntry {
 				System.out.println("Gender    :" + x.getGender());
 				System.out.println("Join Date :" + x.getJoinDate() + "\n");
 				flag = 0;
+				
 			}
 		}
 		if (flag == 1) {
@@ -103,11 +104,11 @@ public class EmpolyeeEntry {
 	private void searchEmp() throws Exception {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter EMPID:");
-		String employeeName = sc.nextLine();
+		String empId = sc.nextLine();
 //		ArrayList<GetData> temp = fileInput.getData();
 		int flag = 1;
 		for (GetData get : al) {
-			if (get.getEmpid().equals(employeeName)) {
+			if (get.getEmpid().equals(empId)) {
 				System.out.println("\nName      :" + get.getName());
 				System.out.println("EMP ID    :" + get.getEmpid());
 				System.out.println("Gender    :" + get.getGender());

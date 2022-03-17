@@ -1,8 +1,8 @@
 package console;
 
-import java.io.Serializable;
+//import java.io.Serializable;
 
-public class GetData implements Serializable{
+public class GetData {
 
 	private String name;
 	private String empid;
