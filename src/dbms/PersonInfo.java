@@ -1,6 +1,6 @@
 package dbms;
 
-public class PersonInfo {
+public class PersonInfo {//POJO class
 	private int empID;
 	private String name;
 	private String email;

@@ -12,10 +12,9 @@ import java.util.*;
 
 public class Main {
 
-	
 	public static void main(String[] args) throws Exception {
-		
-		LinkedList<PersonInfo> list = new LinkedList<PersonInfo>();
+
+		ArrayList<PersonInfo> list = new ArrayList<PersonInfo>();
 
 		try {
 			// Class.forName("com.mysql.jdbc.Driver");
@@ -35,17 +34,11 @@ public class Main {
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
-		/*
-		 * for(PersonInfo get: list) { System.out.print(get.getEmpID()+" "+get.getName()
-		 * +" "+get.getEmail());
-		 * 
-		 * }
-		 */
 		for (PersonInfo get : list) {
-			System.out.println("Employee ID     : "+get.getEmpID());
-			System.out.println("Employee Name   : "+get.getName());
-			System.out.println("Employee Mail ID: "+get.getEmail()+"\n");
-			
+			System.out.println("Employee ID     : " + get.getEmpID());
+			System.out.println("Employee Name   : " + get.getName());
+			System.out.println("Employee Mail ID: " + get.getEmail() + "\n");
+
 		}
 
 	}
