@@ -12,8 +12,9 @@ import java.util.*;
 
 public class Main {
 
+	
 	public static void main(String[] args) throws Exception {
-		PersonInfo person = new PersonInfo();
+		
 		LinkedList<PersonInfo> list = new LinkedList<PersonInfo>();
 
 		try {
@@ -24,11 +25,13 @@ public class Main {
 			String str = "select * from mytable";
 			ResultSet rs = st.executeQuery(str);
 			while (rs.next()) {
+				PersonInfo person = new PersonInfo();
 				person.setEmpID(rs.getInt(1));
 				person.setName(rs.getString(2));
 				person.setEmail(rs.getString(3));
 				list.add(person);
 			}
+			con.close();
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
@@ -38,9 +41,11 @@ public class Main {
 		 * 
 		 * }
 		 */
-
 		for (PersonInfo get : list) {
-			System.out.println(get.getName());
+			System.out.println("Employee ID     : "+get.getEmpID());
+			System.out.println("Employee Name   : "+get.getName());
+			System.out.println("Employee Mail ID: "+get.getEmail()+"\n");
+			
 		}
 
 	}
