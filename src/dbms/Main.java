@@ -18,11 +18,12 @@ public class Main {
 
 		try {
 			// Class.forName("com.mysql.jdbc.Driver");
-			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb", "root", "12345");
-			Statement st = con.createStatement();
+			Class.forName("com.mysql.cj.jdbc.Driver");//connect driver
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb", "root", "12345");// get connection form our db;
+			Statement st = con.createStatement();// create statement 
 			String str = "select * from mytable";
-			ResultSet rs = st.executeQuery(str);
+			ResultSet rs = st.executeQuery(str);//Execute Query 
+			//System.out.println(rs);
 			while (rs.next()) {
 				PersonInfo person = new PersonInfo();
 				person.setEmpID(rs.getInt(1));

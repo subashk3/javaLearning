@@ -28,7 +28,7 @@ class Choice {
 
 public class Network { 
 	private Stack<Choice> stackList = new Stack<>();
-	private Scanner in = new Scanner(System.in);
+	Scanner in = new Scanner(System.in);
 
 
 	enum Index { 
@@ -152,7 +152,8 @@ public class Network {
 	private void indexDetails() {
 		byte choice;
 		Choice choiceObj = new Choice();
-		stackList.push(choiceObj);
+		stackList.push(choiceObj); // initial level zero choice zero
+		
 		printDetails(stackList.peek().getLevel());
 		do {
 			Choice newChoiceObj = new Choice();
@@ -171,7 +172,7 @@ public class Network {
 				printDetails(stackList.peek().getLevel());
 			} else if (choice != 9) {
 				newChoiceObj.setChoice(choice);
-				newChoiceObj.setLevel(stackList.peek().getLevel() + 1);
+				newChoiceObj.setLevel(stackList.peek().getLevel() + 1);//peek level
 				stackList.push(newChoiceObj);
 				printDetails(stackList.peek().getLevel());
 			}
