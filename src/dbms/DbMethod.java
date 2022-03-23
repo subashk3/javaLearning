@@ -4,7 +4,7 @@ package dbms;
 import java.sql.*;
 
 public class DbMethod {
-	private Connection con = null;
+	private Connection con = null; //
 	private Statement st = null;
 	private PreparedStatement pStatement = null;
 

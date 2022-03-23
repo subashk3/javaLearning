@@ -44,7 +44,7 @@ public class RegisterationForom {
 		PreparedStatement preparedStatement = dbMethod.getpStatement(string);
 		preparedStatement.execute();
 		con.close();		
-		System.out.println("Delete Sucessfully..\n");
+		System.out.println("Delete Successfully..\n");
 		run();
 	}
 	private void getUser() throws SQLException {
@@ -85,6 +85,6 @@ public class RegisterationForom {
 		preparedStatement.execute();
 		con.close();
 		System.out.println("Added Sucessfully..\n");
-		run();
+		in.close();		run();
 	}
 }
