@@ -1,17 +1,21 @@
 package dbms;
 
-//import java.beans.Statement;
 import java.sql.*;
 
 public class DbMethod {
-	private Connection con = null; //
+	private Connection con = null;
 	private Statement st = null;
 	private PreparedStatement pStatement = null;
+//Driver name
+	private static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
+//URL
+	private static final String DB_URL = "jdbc:mysql://localhost:3306/mydb";
+	private static final String USERNAME = "root";
 
 	public Connection getConnection() {
 		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");// connect driver
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb", "root", "12345");
+			Class.forName(JDBC_DRIVER);// connect driver
+			con = DriverManager.getConnection(DB_URL, USERNAME, "12345");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

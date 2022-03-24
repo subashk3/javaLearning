@@ -1,10 +1,9 @@
 package dbms;
 
-public class PersonInfo {//POJO class
+public class PersonInfo {// POJO class
 	private int empID;
 	private String name;
 	private String email;
-
 
 	public int getEmpID() {
 		return empID;
@@ -30,5 +29,4 @@ public class PersonInfo {//POJO class
 		this.email = email;
 	}
 
-	
 }

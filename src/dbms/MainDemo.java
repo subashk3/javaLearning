@@ -4,7 +4,7 @@ import java.sql.SQLException;
 
 public class MainDemo {
 
-	public static void main(String[] args) throws SQLException {
+	public static void main(String[] args) throws Exception {
 		/*
 		 * DbConnection objectForom = new DbConnection(); objectForom.connectDb();
 		 */
