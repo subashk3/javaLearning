@@ -58,8 +58,8 @@ public class RegisterationForom {
 
 	private void searchByEmployeeID(int empId) throws Exception {
 
-		Connection con = dbMethod.getConnection();
-		Statement statement = con.createStatement();
+		
+		Statement statement = dbMethod.getConnection().createStatement();
 		ResultSet resultSet = statement.executeQuery("select * from mytable");
 		boolean flag = false;
 		while (resultSet.next()) {
@@ -78,8 +78,8 @@ public class RegisterationForom {
 	}
 
 	private void searchByName(String name) throws Exception {
-		Connection con = dbMethod.getConnection();
-		Statement statement = con.createStatement();
+		
+		Statement statement = dbMethod.getConnection().createStatement();
 		ResultSet resultSet = statement.executeQuery("select * from mytable");
 		boolean flag = false;
 		while (resultSet.next()) {
