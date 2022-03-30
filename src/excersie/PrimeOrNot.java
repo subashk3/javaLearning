@@ -26,7 +26,6 @@ public class PrimeOrNot {
 			System.out.println(getnumber + " the number not a prime number and composite.");
 
 		for (int i = 2; i <= getnumber / 2; i++) {
-
 			if (getnumber % i == 0) {
 				temp = 1;
 				break;

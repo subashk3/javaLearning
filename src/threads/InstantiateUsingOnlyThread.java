@@ -6,7 +6,7 @@ package threads;
 
 public class InstantiateUsingOnlyThread {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		
 		System.out.println("Thread main started");
 		
@@ -14,6 +14,8 @@ public class InstantiateUsingOnlyThread {
 		Thread thread2 = new MyTask("any data that the thread may need to process");
 		thread1.start();
 		thread2.start();
+		thread1.join();
+		thread2.join();
 		
 		System.out.println("Thread main finished");
 	}
