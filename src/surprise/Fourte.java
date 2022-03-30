@@ -11,7 +11,7 @@ class Front {
 		System.out.println("Enter the Number Resultant Number:");
 		int resultantNumber = in.nextInt();
 
-		char operator = in.next();
+	
 
 	}
 
