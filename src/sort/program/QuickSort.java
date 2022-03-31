@@ -25,7 +25,6 @@ public class QuickSort {
 	public void quickSort(int a[], int start, int end) {
 
 		if (start < end) {
-
 			// get previous pivot position
 			int pivotPosition = position(a, start, end);
 			quickSort(a, start, pivotPosition - 1);

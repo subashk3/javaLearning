@@ -4,11 +4,11 @@ public class SynchronClass {
 
 	private int count;
 	
-	public synchronized void increament() {// overcome the thread
+	public void increament() {// overcome the thread
 		
 		count++;
 	}
-	public synchronized void decreament() {
+	public void decreament() {
 		
 		count--;
 	}

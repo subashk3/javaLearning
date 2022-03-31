@@ -7,6 +7,7 @@ public class Anagrams {
 		// first case:
 		if (firString.length() != secString.length()) {
 			System.out.println("Giver Strings are Not anagrams.");
+			return;
 		}
 		// Get arrays	
 		char first[] = firString.toLowerCase().toCharArray();
@@ -25,8 +26,8 @@ public class Anagrams {
 
 		Scanner inScanner = new Scanner(System.in);
 		Anagrams objAnagrams = new Anagrams();
-		String stringOne = "Listen";
-		String stringTwo = "Silent";
+		String stringOne = "act";
+		String stringTwo = "tiger";
 		objAnagrams.isAnagram(stringOne, stringTwo);
 		inScanner.close();
 	}

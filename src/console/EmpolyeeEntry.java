@@ -16,9 +16,7 @@ public class EmpolyeeEntry {
 					"Select choice:\n Press 1 add data \n Press 2 for search employees\n Press 3 Print All \n Press 4 Exit");
 			try {
 				int option = sc.nextInt();
-
 				switch (option) {
-
 				case 1:
 					obj.addEntry();
 					break;

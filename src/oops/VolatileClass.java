@@ -5,6 +5,7 @@ public class VolatileClass {
 	private static volatile int COUNTER = 0;
 
 	public static void main(String[] args) {
+		
 		new ReadingThread().start();
 		new WritingThread().start();
 	}

@@ -15,16 +15,14 @@ public class CreateFolder {
 		File f = new File(s);
 		f.createNewFile();
 
-		System.out.println("Sucessfull");
+		System.out.println("Successfull");
 
 		System.out.println("Add press: 1");
 		System.out.println("Exit: 2");
 		if (sc.nextInt() == 1) {
 			createFiles();
 		} else
-			return;
-
-		
+			return;		
 	}
 
 	public static void main(String[] args) throws IOException {
