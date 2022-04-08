@@ -14,20 +14,18 @@ import java.util.*;
 
 public class SimpleCalculator {
 
-	private int calculate(String number) {
+	public int calculate(String number) {
 		Stack<Integer> stack = new Stack<Integer>();
 		int num = 0;
 		char operator = '+';
 		int len = number.length();
 		int result = 0;
-
 		for (int i = 0; i < len; i++) {
 			char temp = number.charAt(i);
 			
 			if (Character.isDigit(number.charAt(i))) {
 				num = num * 10 + Character.getNumericValue(temp);
-			}
-			
+			}			
 			if (!Character.isDigit(number.charAt(i)) && temp != ' ' || i == len - 1) {
 				if (operator == '+') {
 					stack.push(num);
@@ -51,7 +49,6 @@ public class SimpleCalculator {
 		for (int value : stack) {
 			result += value;
 		}
-
 		return result;
 	}
 
