@@ -2,7 +2,7 @@ package sort.program;
 
 public class BubbleSort {
 	void print() {
-		int a[] = { 17, 3, 1, 6, 2, 8 };
+		int a[] = { 17, 3, 1, 6, 2, 8,1997 };
 
 		for (int i = 1; i < a.length; i++) {
 			boolean isRun = false;
