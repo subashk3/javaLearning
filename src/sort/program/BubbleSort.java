@@ -21,9 +21,7 @@ public class BubbleSort {
 		for (int x : a) {
 			System.out.print(x + " ");
 		}
-
 	}
-
 	public static void main(String[] args) {
 		BubbleSort objBubbleSort = new BubbleSort();
 
