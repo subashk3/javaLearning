@@ -28,7 +28,6 @@ public class FirstLast {
 			} else {
 				end = mid - 1;
 			}
-
 		}
 		return first;
 	}
