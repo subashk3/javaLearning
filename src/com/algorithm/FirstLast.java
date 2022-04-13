@@ -11,45 +11,45 @@
 		1 3 5 5 5 5 28 37 42
 		*/
 package com.algorithm;
+
 import java.util.Scanner;
+
 public class FirstLast {
-	// first
-	public int firstOccurrence(int[] number, int target) {
+	public int firstOccurrence(int[] arr, int target) {
 		int first = -1;
 		int start = 0;
-		int end = number.length - 1;
+		int end = arr.length - 1;
 		while (start <= end) {
 			int mid = (start + end) / 2;
-			if (target == number[mid]) {
+			if (target == arr[mid]) {
 				first = mid;
-				end = mid + 1;
-			} else if (number[mid] > target) {
-				start = mid + 1;
-			} else {
 				end = mid - 1;
+			} else if (arr[mid] > target) {
+				end = mid - 1;
+			} else {
+				start = mid + 1;
 			}
 		}
 		return first;
 	}
-
-// second
-	public int lastOccurrence(int[] number, int target) {
-		int last = -1;
+	public int lastOccurrence(int[] arr, int target) {
+		int second = -1;
 		int start = 0;
-		int end = number.length - 1;
+		int end = arr.length - 1;
 		while (start <= end) {
 			int mid = (start + end) / 2;
-			if (target == number[mid]) {
-				last = mid;
-				start = mid - 1;
-			} else if (number[mid] > target) {
+			if (target == arr[mid]) {
+				second = mid;
+				start = mid + 1;
+			} else if (arr[mid] < target) {
 				start = mid + 1;
 			} else {
 				end = mid - 1;
 			}
 		}
-		return last;
+		return second;
 	}
+
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		System.out.println("Array Length:");
@@ -61,9 +61,7 @@ public class FirstLast {
 		}
 		int target = in.nextInt();
 		in.close();
-		
 		FirstLast o = new FirstLast();
-
 		System.out.println(o.firstOccurrence(number, target));
 		System.out.println(o.lastOccurrence(number, target));
 	}
