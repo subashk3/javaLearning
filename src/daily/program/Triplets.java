@@ -29,6 +29,7 @@ public class Triplets {
 		}
 		System.out.println(set);
 	}
+
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		System.out.println("Enter array size:");
@@ -37,6 +38,7 @@ public class Triplets {
 		for (int i = 0; i < n; i++) {
 			number[i] = in.nextInt();
 		}
+		in.close();
 		Triplets o = new Triplets();
 		o.tripletFind(number);
 	}

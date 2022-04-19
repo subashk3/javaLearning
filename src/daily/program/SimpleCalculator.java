@@ -22,10 +22,10 @@ public class SimpleCalculator {
 		int result = 0;
 		for (int i = 0; i < len; i++) {
 			char temp = number.charAt(i);
-			
+
 			if (Character.isDigit(number.charAt(i))) {
 				num = num * 10 + Character.getNumericValue(temp);
-			}			
+			}
 			if (!Character.isDigit(number.charAt(i)) && temp != ' ' || i == len - 1) {
 				if (operator == '+') {
 					stack.push(num);
@@ -53,11 +53,17 @@ public class SimpleCalculator {
 	}
 
 	public static void main(String[] args) {
+		SimpleCalculator o = new SimpleCalculator();
+		o.solve();
+	}
+
+	private void solve() {
 		Scanner in = new Scanner(System.in);
 		System.out.println("Enter the string:");
 		String number = in.nextLine();
-		SimpleCalculator o = new SimpleCalculator();
-		System.out.println(o.calculate(number));
+		System.out.println(calculate(number));
+		in.close();
+
 	}
 
 }

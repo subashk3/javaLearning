@@ -9,9 +9,7 @@
 	Explanation: The maximum result is 5 XOR 25 = 28.
 	*/
 package daily.program;
-
 import java.util.Scanner;
-
 public class MaximumXOR {
 	private int maxiXOR(int[] a) {
 		int max = 0;
@@ -28,7 +26,6 @@ public class MaximumXOR {
 		}
 		return max;
 	}
-
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		MaximumXOR o = new MaximumXOR();

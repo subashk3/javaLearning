@@ -28,6 +28,7 @@ public class CompareClass {
 
 			ar.add(i, sc.next());
 		}
+		
 		java.util.Iterator it = ar.iterator();
 
 		while (it.hasNext()) {

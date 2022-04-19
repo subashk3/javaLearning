@@ -13,11 +13,13 @@ public class Parentheses {
 		int open = 0, close = 0;
 
 		for (int i = 0, j = s.length() - 1; i < s.length() && j >= 0; i++, j--) {
+			
 			if (s.charAt(i) == '(') {
 				open++;
 			} else if (s.charAt(i) == ')') {
 				open--;
 			}
+			
 			if (s.charAt(j) == ')') {
 				close++;
 			} else if (s.charAt(j) == '(') {
