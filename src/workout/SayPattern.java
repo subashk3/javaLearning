@@ -1,4 +1,4 @@
-/*'
+/*
 Input 
 10
 Output:
@@ -12,12 +12,10 @@ Output:
 1113213211
 31131211131221
 13211311123113112211
+	
 */
-
 package workout;
-
 import java.util.Scanner;
-
 public class SayPattern {
 	private void solve() {
 		Scanner in = new Scanner(System.in);
@@ -29,10 +27,9 @@ public class SayPattern {
 		String result = "1";
 		for (int i = 0; i < n; i++) {
 			if (i == 0) {
-				//System.out.println(result);
+				// System.out.println(result);
 			} else {
 				result = getString(result);
-				
 			}
 		}
 		System.out.println(result);
@@ -55,11 +52,9 @@ public class SayPattern {
 		res += "" + count + result.charAt(i);
 		return res;
 	}
-
 	public static void main(String[] args) {
 		SayPattern obj = new SayPattern();
 		obj.solve();
-
 	}
 
 }
